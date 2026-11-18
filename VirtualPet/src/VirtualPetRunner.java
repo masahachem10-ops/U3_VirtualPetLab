@@ -59,7 +59,7 @@ public class VirtualPetRunner
         {
             if (choice == 1)
             {
-                System.out.println(myPet);
+                System.out.println(myPet.toString());
             }
             else if (choice == 2)
             {
@@ -68,18 +68,18 @@ public class VirtualPetRunner
             }
             else if (choice == 3)
             {
-        myPet.play();
-        System.out.println("\n\nYou have played with " + myPet.getName());
+                myPet.play();
+                System.out.println("\n\nYou have played with " + myPet.getName());
 
             }
-       if (myPet.getEnergyLevel() >= 5  && myPet.getHappinessLevel() >= 5)
-       {
-         printPet("ᵕ");
-       }
-       else
-       {
-         printPet("ᵔ");
-       }
+           if (myPet.getEnergyLevel() >= 5  && myPet.getHappinessLevel() >= 5)
+           {
+             printPet("ᵕ");
+           }
+           else
+           {
+             printPet("ᵔ");
+           }
 
 
             System.out.println(myPet.getName().toUpperCase());
